@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <table class="table-responsive">
         <thead>
             <tr>
                 <th>Name</th>
