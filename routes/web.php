@@ -19,6 +19,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::POST('insert/news', 'JobController@learnJob')->name('insertNews');
+Route::get('/insertnews/view', function () {
+    return view('job', ['name' => 'insertView']);
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('/home', 'HomeController@index')->name('home');
